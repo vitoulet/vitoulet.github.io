@@ -1,0 +1,17 @@
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix cert: <http://www.w3.org/ns/auth/cert#> .
+@prefix rdfs: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+<> a foaf:PersonalProfileDocument ;
+   foaf:maker <#this> ;
+   foaf:primaryTopic <#this> .
+
+<#this> a foaf:Person ;
+   foaf:name "Stephane Sandron";
+   cert:key [
+         a cert:RSAPublicKey;
+         rdfs:label "Generated on work laptop in September 2020";
+         cert:modulus "cba2abe75392250ad2df1d4732e9e90a91b001aff7dce097224bddfab369d0837bc560b5134efeec8567d290296ba84fd691408969b3e925b27043fb6b550c05d2a4f5ae295c4c61df33e906db6d37c0e7973aab772a5384a65c32eadd9710f7959e706c8e2f54c9f1afcb7c6c322b1ef71da5888a251cdf54ba534a15f4cc63e664e6edc86027503e1a1022194f346fa1698c52e683790deee856e58f6c2e9928d460a0e327611233fef0487f007c1441cdf8ab77ba58a18c8b5ceeeeebc4e875685a15f73c2e1e4e0759b81eb3994828c80e223720a967c14ce0d47bf4435edef14f2037add1fc9f76c9c6fc635f5042a09738e9440de5d2fc5979ca1e5347"^^xsd:hexBinary;
+         cert:exponent "65537"^^xsd:nonNegativeInteger
+        ] .
